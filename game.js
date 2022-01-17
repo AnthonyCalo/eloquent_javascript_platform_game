@@ -155,7 +155,7 @@ var DOMDisplay = class DOMDisplay {
 	}
 };
 
-var scale = 20;
+var scale = 35;
 
 function drawGrid(level) {
 	return elt(
@@ -198,6 +198,7 @@ DOMDisplay.prototype.syncState = function (state) {
 };
 
 DOMDisplay.prototype.scrollPlayerIntoView = function (state) {
+	console.log(state)
 	let width = this.dom.clientWidth;
 	let height = this.dom.clientHeight;
 	let margin = width / 3;
